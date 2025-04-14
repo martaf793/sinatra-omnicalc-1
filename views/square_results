@@ -1,0 +1,10 @@
+<h1>Square results</h1>
+
+<ol>
+  <il>
+    <%= @n %>
+  </il>
+  <il>
+    <%= @result %>
+  </il>
+</ol>
