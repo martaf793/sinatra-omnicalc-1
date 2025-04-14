@@ -14,16 +14,22 @@ end
 
 get("/square/results") do
   @n=params.fetch("users_number").to_f
-  @result=n**2
+  @result=@n**2
   erb(:square_results)
 end
 
-# get("/square_root/new") do
-#   erb(:square_root_new)
-# end
-# get("/random/new") do
-#   erb(:random_new)
-# end
+get("/square_root/new") do
+  erb(:square_root_new)
+end
+get("/random/new") do
+  erb(:random_new)
+end
+get("/random/results") do
+  @r1=params.fetch("r1").to_f
+  @r2=params.fetch("r2").to_f
+  @random_n=rand(@r1..@r2)
+erb(:random_results)
+end
 # get("/payment/new") do
 #   erb(:payment_new)
 # end
