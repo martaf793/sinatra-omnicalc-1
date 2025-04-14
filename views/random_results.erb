@@ -1,13 +1,40 @@
-<h1>Square results</h1>
+<h1>Random Results</h1>
 
-<ol>
+<dl>
+  <dt>
+    Minimum
+  </dt>
+  <dd>
+    <%= @r1 %>
+  </dd>
+
+  <dt>
+    Maximum
+  </dt>
+  <dd>
+    <%= @r2 %>
+  </dd>
+
+  <dt>
+    Random Number
+  </dt>
+  <dd>
+    <%= @random_n %>
+  </dd>
+</dl>
+
+<a href="/random/new">
+  Pick another random number
+</a>
+
+<!--<ol>
   <il>
-    Minimum <%= @r1 %>
+    Minimum <%#= @r1 %>
   </il>
   <il>
-    Maximum <%= @r2 %>
+    Maximum <%#= @r2 %>
   </il>
     <il>
-    Random number <%= @random_n %>
+    Random number <%#= @random_n %>
   </il>
-</ol>
+</ol>-->
